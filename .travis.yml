@@ -1,0 +1,12 @@
+languae: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - "node"
+  - "lts/*"
+  
+script:
+  - npm build
