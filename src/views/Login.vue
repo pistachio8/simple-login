@@ -41,6 +41,8 @@
                         >
                             로그인
                         </v-btn>
+                        <!-- <v-btn @click="test">테스트</v-btn>
+                        <v-btn @click="postTest">포스트 테스트</v-btn> -->
                     </div>
                     
                 </v-card>
@@ -67,7 +69,7 @@ export default {
     },
     methods: {
         // store.js에 있는 login 액션을 이 안에 선언된 메소드처럼 사용 가능
-        ...mapActions(['login'])
+        ...mapActions(['login']),
         // login() {
             // 전체 유저에서 해당 이메일로 유저를 찾는다.
             // let selectedUser = null
@@ -83,6 +85,36 @@ export default {
 
             // 그 유저의 비밀번호와 입력된 비밀번호를 비교한다.
             
+        // }
+        // test() {
+        //     axios
+        //         .get('https://reqres.in/api/users?page=2')
+        //         // this를 뷰 인스턴스를 가리키게 하기 위해 화살표 함수 사용
+        //         .then( response => {
+        //             // handle success
+        //             console.log(response);
+        //         })
+        //         .catch( error => {
+        //             // handle error
+        //             console.log(error);
+        //         })
+        //         .finally( () => {
+        //             // always executed
+        //             console.log("test");
+                    
+        //     });
+        // },
+        // postTest() {
+        //     axios.post('https://reqres.in/api/register', {
+        //         email: "eve.holt@reqres.in",
+        //         password: "cityslicka"
+        //     })
+        //     .then( response => {
+        //         console.log(response);
+        //     })
+        //     .catch( error => {
+        //         console.log(error);
+        //     })
         // }
     }
 };
